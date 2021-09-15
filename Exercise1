@@ -1,0 +1,16 @@
+float circleSize = 50;
+
+void setup(){
+  size(800,600);
+  background(color(100,149,237));
+}
+
+//draw some pubbles 
+void draw() {  
+  if (mousePressed) {
+    ellipseMode(CENTER);
+    fill(225,255,255);
+    stroke(175,238,238);
+    ellipse(mouseX, mouseY, circleSize, circleSize);
+  }
+}
