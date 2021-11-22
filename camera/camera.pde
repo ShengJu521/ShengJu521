@@ -32,7 +32,7 @@ void draw(){
   loadPixels();
   
   for(int x = 0; x < video.width; x++){
-    for(int y = 0; y < video.width; y++){
+    for(int y = 0; y < video.height; y++){
       int loc = x + y * video.width;
       
       color currentColor = video.pixels[loc];
